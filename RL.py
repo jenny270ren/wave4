@@ -7,12 +7,14 @@ def f1(d, v):
     if list==[]:
         return "No Key"
     return list
-d = {
-  "stu":"Lisa",
-  "n":19,
-  "brand": "qw",
-  "model": "98HW",
-  "year": 19
-}
-a = input()
+
+n = int(input("number of items"))
+d ={}
+
+for w in range(n):
+    k = input("input key name")
+    va = input("input value")
+    d[k]= va
+
+a = input("enter value to find")
 print(f1(d,a))
